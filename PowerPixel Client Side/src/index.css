@@ -4,3 +4,23 @@
 * {
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+}
+
+/* Add this to your main CSS */
+dialog.modal {
+  max-width: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    min-height: unset;
+    height: auto;
+  }
+}

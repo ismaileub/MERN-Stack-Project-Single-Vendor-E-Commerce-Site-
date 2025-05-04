@@ -1,11 +1,11 @@
 import React from 'react';
-import NavBar from './Components/NavBar';
+
 
 const Home = () => {
     return (
         <div>
-            <NavBar></NavBar>
-            <div>
+
+            <div className='h-lvh bg-emerald-200'>
 
             </div>
 

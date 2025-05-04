@@ -3,6 +3,7 @@
 import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import AuthForm from '../../AuthForm/AuthForm';
 
 const NavBar = () => {
     return (
@@ -90,15 +91,34 @@ const NavBar = () => {
                                 3
                             </span>
                         </Link>
-                        <Link to="/signin">
-                            <button type="button" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 text-nowrap cursor-pointer">
-                                Sign In
-                            </button>
 
-                        </Link>
+                        <button onClick={() => document.getElementById('my_modal_2').showModal()} type="button" className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 text-nowrap cursor-pointer">
+                            Sign In
+                        </button>
+
+
+
                     </div>
                 </div>
             </nav>
+
+
+            <div className='hidden lg:block '>
+                <dialog id="my_modal_2" className="modal">
+                    <div className="modal-box  w-full p-0 overflow-visible xl:max-w-[800px] lg:max-w-[600px] xl:max-h-[480px]">
+                        {/* <form method="dialog">
+                        <button className="btn text-2xl fixed btn-sm btn-circle btn-ghost right-2 top-2">✕</button>
+                    </form> */}
+                        <AuthForm />
+                    </div>
+                    <form method="dialog" className="modal-backdrop">
+                        <button>close</button>
+                    </form>
+                </dialog>
+            </div>
+
+
+
         </div>
     );
 };

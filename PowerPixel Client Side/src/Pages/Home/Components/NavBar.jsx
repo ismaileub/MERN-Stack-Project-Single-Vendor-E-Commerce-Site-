@@ -1,11 +1,12 @@
 
 
-import React from 'react';
+
 import { FaShoppingCart } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import AuthForm from '../../AuthForm/AuthForm';
 
 const NavBar = () => {
+
     return (
         <div>
             <nav >
@@ -115,6 +116,12 @@ const NavBar = () => {
                         <button>close</button>
                     </form>
                 </dialog>
+            </div>
+
+
+            {/* k;llllllllllll */}
+            <div>
+
             </div>
 
 

@@ -15,11 +15,8 @@ const router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>
-            },
-            // {
-            //     path: "auth-form",
-            //     element: <AuthForm></AuthForm>
-            // }
+            }
+
         ]
     },
 ]);
